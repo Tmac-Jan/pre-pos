@@ -1,5 +1,12 @@
 'use strict';
 
 function collectSameElements(collectionA, collectionB) {
-  return '实现练习要求，并改写该行代码。';
+ return collectionA.filter(function(a){
+        for(let i=0;i<=collectionB.length;i++){
+            if(collectionB[i]==a){
+            return true;
+            }
+        }
+        return false;
+     });
 }
